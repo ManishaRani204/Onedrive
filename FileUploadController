@@ -1,0 +1,5 @@
+<aura:component controller="OneDriveUploadController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    
+    <lightning:fileUpload label="Upload File" multiple="true" accept=".pdf, .png, .doc, .docx" recordId="{!v.recordId}" aura:id="multifileUpload" onuploadfinished="{!c.handleUploadFinished}" />
+    <!--<aura:handler name="init" value="{!this}" action="{!c.handleOnedriveUpload}"/>-->   
+</aura:component>
