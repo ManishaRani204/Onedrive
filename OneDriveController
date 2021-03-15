@@ -1,0 +1,10 @@
+public class OneDriveUploadController {
+       
+   // @InvocableMethod(label='Upload Document in One Drive' description='Upload Document in One Drive')
+	@AuraEnabled
+    public static List<String> UploadDocument(ID oppid) {	
+        new OneDriveService().UploadDocuments(oppid);
+        return null;
+    }
+    
+}
