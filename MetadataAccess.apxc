@@ -1,0 +1,9 @@
+public class MetadataTypeReader {
+    
+    public static One_Drive_Integration__mdt OneDriveIntegration {
+         get {
+             return  [SELECT Client_Id__c,Client_Secret__c,Grant_Type_Code__c,Grant_Type_Refresh__c,Scope__c FROM One_Drive_Integration__mdt];
+          }
+   	}
+
+}
